@@ -1,0 +1,13 @@
+---
+title: "HW 4"
+author: "Cheng-Ying Chou"
+date: "2024-10-07"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Problem 1
+Investigate the car price (cars.dat) using linear regression and lasso and optimize the value of the tuning parameter so that the resulting model has smallest residuals.

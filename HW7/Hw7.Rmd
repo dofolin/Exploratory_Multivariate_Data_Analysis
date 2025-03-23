@@ -1,0 +1,46 @@
+---
+title: "Hw 7"
+author: "Cheng-Ying Chou"
+date: '2024-11-11'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Problem 1
+Use the engineer data. Combine the two groups into a single sample. 
+(a)	Using a scree plot, the number of eigenvalues greater than 1, and the percentages, is there a clear choice of m?
+(b)	Extract three factors by the principal component method and carry out a varimax rotation.
+(c)	Extract three factors by the principal axis factor method and carry out a varimax rotation. 
+(d)	Compare the results of parts (b) and (c)
+
+![](/Users/cychou/Documents/Work/Teaching/Exploratory Multivariate Data Analysis/2024/Hw7/engineer.png)
+
+## Problem 2
+Compute the orthogonal factor model for
+$$\Sigma=
+\begin{bmatrix}
+   1 & 0.9 &0.7\\
+0.9  & 1   & 0.4\\
+0.7  & 0.4  &1
+\end{bmatrix}.
+$$
+
+
+## Problem 3
+A 12-year-old girl made five ratings on a nine-point semantic differential scale for each of seven of her acquaintances. The ratings were based on the five adjectives "kind," "intelligent," "happy," "likeable," and "just." Her ratings are given in the lecture slides.
+The correlation matrix for the five variables (adjectives) is as follows, 
+
+$$\mathbf{R}=
+\begin{bmatrix}
+ 1.000 & .296 & .881 & .995 & .545 \\
+ .296 & 1.000 & -.022 & .326 & .837 \\
+.881 & -.022 & 1.000 & .867 & .130 \\
+.995 & .326 & .867 & 1.000 & .544\\
+.545 & .837 & .130 & .544 & 1.000 
+\end{bmatrix}$$
+(a) Compute factor loadings and communalities by the principal component method. 
+(b) Use the hypothesis test to choose $m$ factors for the data. 
+(Hint: Please solve (a) and (b) step by step.)

@@ -1,0 +1,59 @@
+---
+title: "Hw 6"
+author: "Cheng-Ying Chou"
+date: "2024-11-04"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Problem 1
+L. R. Iannaccone argues that the explanation for differences between denominations has predictive power and is “unidimensional.”
+In support of the theory, he supplied data on 17 Protestant denominations plus Catholics.  To get a measure of “distinctiveness” (strictness of discipline), he averaged scores from 16 experts on a seven-point scale for the criteria: “Does the denomination emphasize
+maintaining a separate and distinctive life style or morality in personal and family life, in such areas as dress, diet, drinking, entertainment, uses of time, marriage, sex, child rearing, and the like? Or does it affirm the current American mainline life style in these respects?” These scores and fou survey-based measures appear in Display 17.22. Attendance is the average percentage of weeks that individuals attended a church meeting. Nonchurch is the average number of secular organizations to which members belong. Strong is the average percentage of members that describe themselves as being strong church members. Income is the average annual income of members. The last four variables come from an extensive survey of church members.
+
+Treat the final four variables as responses characterizing different aspects of the churches’ memberships. To what extent does a single dimension describe differences on all four scales? (Use PCA.) Draw a scatterplot of the first versus the second principal components, and label the points with the church denomination. Interpret the first principal component by comparing the denominations at the ends of this scale. How does that single dimension relate to the author’s distinctiveness scale? To what extent do these data support his theory?
+
+| Church  deonmination    | Distinctiveness | Church attendance (% weekly) | Number of nonchurch  memberships | Strong  member  (%) | Annual Income  ($US) |
+|-------------------------|:---------------:|:----------------------------:|:--------------------------------:|:-------------------:|:--------------------:|
+| American Baptist        |       2.5       |             25.6             |               1.01               |         50.6        | 24,000               |
+| Aseemblies of God       |       4.8       |             35.4             |               0.68               |         58.6        | 27,100               |
+| Catholic                |       3.0       |             26.4             |               1.43               |         40.0        | 32,900               |
+| Disciples of Christ     |       2.1       |             24.3             |               2.58               |         47.0        | 28,600               |
+| Episopal                |       1.1       |             17.3             |               1.93               |         32.0        | 39,000               |
+| Evaneglical Lutheran    |       2.7       |             23.0             |               1.71               |         41.5        | 33,700               |
+| Jhovah's Witness        |       6.0       |             33.6             |               0.38               |         60.6        | 26,300               |
+| Methodist               |       1.8       |             19.1             |               1.56               |         30.6        | 32,800               |
+| Missouri Synod Lutheran |       3.6       |             27.5             |               1.76               |         47.7        | 35,100               |
+| Mormon                  |       5.4       |             37.8             |               1.73               |         70.2        | 31,600               |
+| Nazarene                |       4.5       |             33.1             |               0.86               |         48.1        | 31,600               |
+| Presbyterian            |       1.6       |             21.2             |               1.88               |         32.4        | 37,100               |
+| Quaker                  |       4.1       |             29.6             |               1.89               |         58.3        | 32,500               |
+| Reformed Church         |       2.8       |             36.7             |               1.12               |         61.4        | 30,400               |
+| Seventh Day Adventist   |       5.8       |             28.5             |               0.61               |         58.7        | 29,700               |
+| Southern Baptist        |       4.0       |             25.0             |               1.13               |         44.8        | 30,400               |
+| Unitarian               |       1.6       |             13.2             |               2.79               |         40.8        | 42,700               |
+| United Church of Christ |       1.3       |             19.2             |               1.56               |         33.6        | 40,200               |
+
+
+
+## Problem 2
+Magnetic resonance imaging (MRI) can be used to obtain cross-sectional images
+through living tissue. One application of MRI is in estimating pig fatness. MRI images were col-
+lected at 13 equal spacings (approximately 8 cm apart) along the full-body lengths of 12 pigs. The
+pigs were subsequently killed and dissected to determine their actual fat percentages.  It is desired to use MRI for predicting pig fat prior to killing a pig. Some
+redundancies exist in the MRI measurements, and not all 13 measurements are needed. Two general approaches are possible for developing a prediction equation: Use a variable selection procedure,
+such as forward selection, to identify a subset of measurements and a regression model for predict-
+ing pig fat; or use principal components analysis on the MRI measurements to identify a few linear
+combinations that explain most of the variability, and then regress actual pig fat percentage on the
+meaningful combinations suggested by these. (a) What are the relative advantages and disadvantages
+of these two approaches? (b) As a practical matter, it is time-consuming to interpret all 13 images. If
+the goal is to develop a prediction model that requires the fewest MRI measurements, which of the
+two strategies is preferable? (c) use principal components
+analysis to find two or three linear combinations of the MRI measurements of pig fat that explain most
+of the variability in the measurements (M1 through M13). Try to find meaningful linear combinations
+(for example, the average of all 13) that these suggest.
+
+

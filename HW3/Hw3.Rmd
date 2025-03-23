@@ -1,0 +1,13 @@
+---
+title: "HW 3"
+author: "Cheng-Ying Chou"
+date: "2024-09-30"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Problem 1
+Baten, Tack, and Baeder (1958) compared judges' scores on fish prepared by three methods. Twelve fish were cooked by each method, and several judges tasted fish samples and rated each on four variables: y1 = aroma, y2 = flavor, y3 = texture, and y4 =moisture. The data are in the file “fish.csv”. Each entry is an average score for the judges on that fish. Compare the three methods using all four MANOVA tests step by step in addition to using R packages. 
